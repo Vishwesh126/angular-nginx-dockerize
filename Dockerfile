@@ -2,7 +2,7 @@
 FROM node:17 as angularApp
 RUN mkdir -p /app
 WORKDIR /app
-RUN git clone 
+RUN git clone https://github.com/Vishwesh126/angular-nginx-dockerize.git
 RUN mv angular-nginx-docker vish-app
 WORKDIR vish-app
 RUN npm install && npm run build
