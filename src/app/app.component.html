@@ -1,0 +1,28 @@
+<div fxLayout="column" fxFlexFill fxLayoutGap="5px">
+  <mat-toolbar color="primary">
+    <span>DevOps Engineer - Vish</span>
+    <div fxFlex fxFlexFill></div>
+    <div>
+      <button mat-icon-button [matMenuTriggerFor]="appMenu">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+      <mat-menu #appMenu="matMenu">
+        <button mat-menu-item>Profile</button>
+		<mat-divider></mat-divider>
+        <button mat-menu-item>LogOut</button>
+        <mat-divider></mat-divider>
+        <button mat-menu-item>Help</button>
+      </mat-menu>
+    </div>
+  </mat-toolbar>
+  <div fxFlex style="padding: 12px;">
+    <div fxLayout="column" fxLayoutAlign="center center">
+      <span style="font-size: 2.4em; font-style: bold">Hi Vish!! You are a DevOps Engineer</span>
+    </div>
+  </div>
+  <mat-toolbar color="primary">
+    <div fxLayout="row" fxLayoutAlign="center center" style="width: 100%">
+      Developed - Vish
+    </div>
+  </mat-toolbar>
+</div>
