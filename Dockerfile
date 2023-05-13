@@ -1,5 +1,5 @@
 # Stage 1 - for building the angular app
-FROM node:17 as angularApp
+FROM node:alpine3.17 as angularApp
 RUN mkdir -p /app
 WORKDIR /app
 RUN git clone https://github.com/Vishwesh126/angular-nginx-dockerize.git
