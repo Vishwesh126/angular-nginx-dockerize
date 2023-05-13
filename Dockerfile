@@ -2,6 +2,7 @@
 FROM node:alpine3.17 as angularApp
 RUN mkdir -p /app
 WORKDIR /app
+RUN apt update -y && apt install git -y
 RUN git clone https://github.com/Vishwesh126/angular-nginx-dockerize.git
 RUN mv angular-nginx-dockerize vish-app
 WORKDIR vish-app
